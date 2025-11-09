@@ -104,3 +104,9 @@ This is the opening slide
 
 - Email: matthew@paz.land
 - GitHub: https://github.com/mpazaryna
+
+---
+
+# Image
+
+[image](./image.png)
