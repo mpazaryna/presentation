@@ -109,4 +109,4 @@ This is the opening slide
 
 # Image
 
-[image](./image.png)
+![w:800 h:480 Picture of the application](https://mpazaryna.github.io/presentation/jstd/image.png)
