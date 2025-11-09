@@ -3,9 +3,15 @@ marp: true
 theme: default
 ---
 
+# On Device AI
+
+This is the opening slide
+
+---
+
 # About Me
 
-- Freelance AI Developer & Consultant
+- Independent Developer & Consultant
 - Specializing in on-device AI with Apple Silicon & MLX
 - Building domain-specific AI tools across a wide range of domains
 - Focus on privacy-first and local LLM
@@ -14,6 +20,7 @@ theme: default
 
 # Why MLX + Apple Silicon 
 
+---
 
 # Privacy First
 
