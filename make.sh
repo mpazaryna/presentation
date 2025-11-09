@@ -1,1 +1,0 @@
-marp presentation.md -o index.html
