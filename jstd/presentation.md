@@ -14,18 +14,30 @@ theme: default
 
 # Why MLX + Apple Silicon 
 
-Privacy First
+
+# Privacy First
+
 - Patient data never leaves the device
 - Complete HIPAA compliance simplified
 
-Cost Effective
+---
+
+# Cost Effective
+
 - No API fees or subscriptions
 - One-time setup, unlimited use
 
-Optimized Performance
+---
+
+# Optimized Performance
+
 - MLX leverages Apple's Neural Engine
 - On-Device: < 2 seconds
 - Cloud: 3-8 seconds + latency
+
+---
+
+# How I Built It
 
 ---
 
@@ -40,41 +52,48 @@ Optimized Performance
 
 ---
 
-# How I Built It
+# Data Preparation
 
-1. Data Preparation
-    - Collected anonymized notes from partner
-    - Built synthetic notes for subject matter expert review
-2. Fine-tuning with MLX
-    - Specialized training on terminology and medical coding
-3. Integration
-    - Built a native macOS app
+- Collected anonymized notes from partner
+- Built synthetic notes for subject matter expert review
 
 ---
 
-# Key Takeaways
+# Fine-tuning with MLX
 
-## What I Learned Using AI This Way
-
-1. Domain Expertise Matters
-    - Generic models need specialized training
-
-2. On-Device AI is Production-Ready
-    - Modern hardware can handle complex NLP
-
-3. Privacy Enables Adoption
-    - HIPPA compliance is extensive
-
-4. Real Users Drive Innovation
-    - Iterative refinement with practitioner feedback is crucial for success.
+- Specialized training on terminology and medical coding
 
 ---
 
-# Key Takeaway
+# Integration
 
-"AI doesn't have to live in the cloud to be powerful"
+- Built a native macOS app
 
-Contact:
+---
+
+# What I Learned
+
+---
+
+# Domain Expertise Matters
+
+- Generic models need specialized training
+
+---
+
+# On-Device AI is Production-Ready
+
+- Modern hardware can handle complex NLP
+
+---
+
+# Privacy
+
+- HIPPA compliance is extensive
+
+---
+
+# Contact
+
 - Email: matthew@paz.land
 - GitHub: https://github.com/mpazaryna
-
