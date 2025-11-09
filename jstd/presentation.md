@@ -12,27 +12,27 @@ This is the opening slide
 # About Me
 
 - Independent Developer & Consultant
-- Specializing in on-device AI with Apple Silicon & MLX
-- Building domain-specific AI tools across a wide range of domains
-- Focus on privacy-first and local LLM
+- Over 35 years in enterprise develoment
+- Specializing in AI centric development
+- Building applications and tools across a wide range of domains 
+- Yoga Teacher, Musician and an aspiring artist
 
 ---
 
-# Why MLX + Apple Silicon 
+# Why Apple Silicon with MLX
+
+---
+
+# Fine-tuning with MLX
+
+- Specialized training on terminology and medical coding
 
 ---
 
 # Privacy First
 
-- Patient data never leaves the device
-- Complete HIPAA compliance simplified
-
----
-
-# Cost Effective
-
-- No API fees or subscriptions
-- One-time setup, unlimited use
+- Data never leaves the device
+- HIPAA compliance simplified
 
 ---
 
@@ -50,8 +50,8 @@ This is the opening slide
 
 # Tech Stack
 
-- Framework: MLX
 - Models: Apple Foundation Models
+- Framework: MLX
 - Languages: Python + Swift
 - Platform: macOS Native
 - Hardware: M1 and M4 chips, Apple Silicon
@@ -76,27 +76,14 @@ This is the opening slide
 
 - Built a native macOS app
 
+![w:1000 h:480](image.png)
+
 ---
 
 # What I Learned
 
----
-
-# Domain Expertise Matters
-
-- Generic models need specialized training
-
----
-
-# On-Device AI is Production-Ready
-
+- Generic models benefit from specialized training
 - Modern hardware can handle complex NLP
-
----
-
-# Privacy
-
-- HIPPA compliance is extensive
 
 ---
 
@@ -104,11 +91,5 @@ This is the opening slide
 
 - Email: matthew@paz.land
 - GitHub: https://github.com/mpazaryna
-
----
-
-# Image
-
-![screenshot](image.png)
 
 
