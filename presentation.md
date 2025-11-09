@@ -5,14 +5,14 @@
 **Duration:** 7-8 minutes  
 **Theme:** "How I Use AI to Get Work Done"  
   
-⸻  
+---
 ## **Slide 1: Title**  
 ### **From Dictation to Documentation: Building On-Device AI for Healthcare**  
 **How I Use Apple's MLX Framework to Create Privacy-First Clinical Tools**  
   
 *Speaker Notes:* Welcome to my lightning talk about building on-device AI for healthcare documentation using Apple's MLX framework. Today I'll show you how I created a privacy-first solution for chiropractic SOAP notes.  
-  
-⸻  
+
+---   
 ## **Slide 2: About Me**  
   
 - **Freelance AI Developer & Consultant**  
@@ -23,8 +23,9 @@
 **Current Project:** Chiropractic SOAP notes automation system  
   
 *Speaker Notes:* I'm a freelance AI developer specializing in on-device solutions. My current focus is on building domain-specific healthcare tools that prioritize patient privacy.  
-  
-⸻  
+
+--- 
+
 ## **Slide 3: The Documentation Burden**  
   
 ### **The Numbers**  
@@ -42,8 +43,9 @@
 **The Challenge:** How do we use AI to solve this while keeping patient data completely private?  
   
 *Speaker Notes:* Healthcare providers spend an enormous amount of time on documentation. Current cloud-based solutions raise privacy concerns and come with ongoing costs. The challenge is creating an AI solution that keeps data completely private.  
-  
-⸻  
+
+---
+
 ## **Slide 4: Why MLX + Apple Silicon?**  
   
 ### **The On-Device Advantage**  
@@ -70,7 +72,8 @@
   
 *Speaker Notes:* MLX and Apple Silicon provide the perfect combination for on-device AI. We get privacy by default, zero latency, no ongoing costs, and optimized performance using the Neural Engine.  
   
-⸻  
+---
+
 ## **Slide 5: How I Built It**  
   
 ### **Development Workflow**  
@@ -105,7 +108,8 @@ output = model.generate(voice_transcript)
   
 *Speaker Notes:* The development process involved data preparation with anonymized SOAP notes, model selection from Apple Foundation Models, fine-tuning with MLX for chiropractic terminology, optimization for Apple Silicon, and integration into a native macOS app.  
   
-⸻  
+---
+
 ## **Slide 6: Demo - Patient Encounter to SOAP Note**  
   
 ### **Workflow Demonstration (3-minute recorded demo)**  
@@ -131,7 +135,8 @@ output = model.generate(voice_transcript)
   
 *Speaker Notes:* Here's a recorded demo showing the complete workflow from voice input to finished SOAP note with ICD-10 codes, all processed locally in under 2 seconds.  
   
-⸻  
+---
+
 ## **Slide 7: Real-World Impact**  
   
 ### **The Results**  
@@ -152,7 +157,8 @@ output = model.generate(voice_transcript)
   
 *Speaker Notes:* The real-world impact has been significant: 20 minutes saved per patient, 95% coding accuracy, zero monthly fees, and 100% on-device privacy. Our partner clinic saw a 30% reduction in documentation time.  
   
-⸻  
+---
+
 ## **Slide 8: Key Takeaways**  
   
 ### **What I Learned Using AI This Way**  
@@ -176,7 +182,9 @@ output = model.generate(voice_transcript)
 - **Timeline:** 2-3 weeks to MVP  
   
 *Speaker Notes:* The key lessons: domain expertise matters, on-device AI is production-ready, privacy enables adoption in healthcare, and real user feedback drives innovation. You can build similar solutions in 2-3 weeks.  
-⸻  
+
+---
+
 ## **Slide 9: Thank You & Questions**  
   
 ### **Thank You!**  
