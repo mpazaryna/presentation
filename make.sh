@@ -1,1 +1,1 @@
-marp jstd/presentation.md -o jstd/index.html
+marp presentation.md -o index.html
