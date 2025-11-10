@@ -15,141 +15,103 @@ Machine Learning on Apple Silicon
 
 # The Landscape
 
-ML frameworks optimized for NVIDIA GPUs
-
-Apple Silicon left behind
-
-Gap in the market
+- ML frameworks optimized for NVIDIA GPUs
+- Apple Silicon left behind
+- Gap in the market
 
 ---
 
 # Enter MLX
 
-Open-source from Apple
-
-Python-first design
-
-Unified memory architecture
+- Open-source from Apple
+- Python-first design
+- Unified memory architecture
 
 ---
 
 # Why Apple Silicon?
 
-Billions of devices
-
-High-performance GPU
-
-Shared memory model
-
-Massive untapped potential
+- Billions of devices
+- High-performance GPU
+- Shared memory model
+- Massive untapped potential
 
 ---
 
 # Core Design Principles
 
-Simple and intuitive API
-
-Familiar NumPy-like syntax
-
-Lazy evaluation
-
-Composable functions
+- Simple and intuitive API
+- Familiar NumPy-like syntax
+- Lazy evaluation
+- Composable functions
 
 ---
 
 # Architecture Overview
 
-NumPy-like array interface
-
-Unified memory (CPU + GPU)
-
-Automatic differentiation
-
-JIT compilation
+- NumPy-like array interface
+- Unified memory (CPU + GPU)
+- Automatic differentiation
 
 ---
 
 # Key Features
 
-Efficient inference on-device
-
-Fine-tuning and training
-
-Memory-optimized operations
-
-Cross-platform compatibility
+- Efficient inference on-device
+- Fine-tuning and training
+- Memory-optimized operations
+- Cross-platform compatibility
 
 ---
 
 # MLX vs Alternatives
 
-PyTorch: GPU-focused, larger overhead
-
-TensorFlow: Production-heavy, complex
-
-JAX: Functional, steep learning curve
-
-MLX: Apple Silicon native, lightweight
+- PyTorch: GPU-focused, larger overhead
+- TensorFlow: Production-heavy, complex
+- JAX: Functional, steep learning curve
+- MLX: Apple Silicon native, lightweight
 
 ---
 
 # Core Concepts
 
-**Arrays:** Lazy computation model
+- **Arrays:** Lazy computation model
+- **Operations:** GPU-accelerated when beneficial
+- **Gradients:** Full autodiff support
+- **Training:** Lightning-fast fine-tuning
 
-**Operations:** GPU-accelerated when beneficial
+---
 
-**Gradients:** Full autodiff support
+# Training Pipeline: Data to Inference
 
-**Training:** Lightning-fast fine-tuning
+**Step 1: Data Preparation**
+- Extract and annotate domain-specific patterns
+- Convert to optimized training tensors
+
+**Step 2: Model Training**
+- Train specialized architectures from scratch
+- Metal-accelerated on Apple Silicon
+
+**Step 3: Deploy & Inference**
+- Package models (.npz or .safetensors)
+- Load at startup, run in parallel
 
 ---
 
 # What You Can Do
 
-Inference on M-series chips
-
-Train models end-to-end
-
-Fine-tune LLMs locally
-
-Run quantized models efficiently
-
----
-
-# Real-World Performance: JSTD
-
-**Model Loading:** 34ms (all 3 models at startup)
-
-**Fresh Models:** Training date 2025-11-10
-
-**Inference Times:** 14ms (ICD), 3ms (CPT), 2ms (VERTEBRAL)
-
-**Predictions:** 8 ICD codes, 2 CPT codes, 8 vertebral levels
-
-**Architecture:** Pure MLX inference, no fallbacks
-
----
-
-# Getting Started
-
-Install: pip install mlx
-
-Documentation: mlx-framework.readthedocs.io
-
-Examples: github.com/ml-explore/mlx
-
-Community: Active development
+- Train specialized models from scratch
+- Inference on M-series chips in <50ms
+- Parallel model execution
+- Bundle models directly in apps
 
 ---
 
 # The Future
 
-On-device AI becomes standard
-
-Privacy-first applications
-
-Distributed ML at the edge
+- On-device AI becomes standard
+- Privacy-first applications
+- Distributed ML at the edge
 
 ---
 
