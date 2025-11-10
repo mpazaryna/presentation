@@ -3,78 +3,84 @@ marp: true
 theme: default
 ---
 
-# On Device AI
+# Private Intelligence for Modern Practices
 
-This is the opening slide
+- Building solutions that don't depend on frontier models
 
 ---
 
 # About Me
 
-- Independent Developer & Consultant
-- Over 35 years in enterprise develoment
-- Specializing in AI centric development
-- Building applications and tools across a wide range of domains 
-- Yoga Teacher, Musician and an aspiring artist
+- Independent Developer 
+- Self taught
+- Spent 35 years in enterprise environments
+- Focused on agentic development and building
 
 ---
 
-# Why Apple Silicon with MLX
+# Why Apple Native
+
+- Apple Foundation Models are available on 30+ Apple device models
+- MLX framework allows developers to train models on Apple Silicon
+- Privacy First Approach to data
+- SwiftUI is a joy to work with
+  
+---
+
+# How I Built the Beast
+
+- Dev Time: 3 weeks to proof of concept
+- Explore and Learn MLX framework
+- Learn SwiftUI and xCode practices
 
 ---
 
-# Fine-tuning with MLX
+# Building the MLX Models
 
-- Specialized training on terminology and medical coding
-
----
-
-# Privacy First
-
-- Data never leaves the device
-- HIPAA compliance simplified
+- Collected actual notes from partner
+- Built synthetic notes for comprehensive coverage 
+- Python based workflow to process notes
+- Initially models where deployed to HuggingFace for dynamic loading
 
 ---
 
-# Optimized Performance
+# Data Processing: Notes → Models
 
-- MLX leverages Apple's Neural Engine
-- On-Device: < 2 seconds
-- Cloud: 3-8 seconds + latency
+1. **Extract & Annotate** - Parse raw notes for clinical findings, diagnoses, anatomical references, treatment codes
 
----
+2. **Build Domain Vocabulary** - Create terminology mappings from actual practitioner language (not textbook terms)
 
-# How I Built It
+3. **Convert to Training Tensors** - Format data for MLX: optimized vectors ready for neural network training
 
 ---
 
-# Tech Stack
+# Neural Network Training: MLX + Apple Silicon
 
-- Models: Apple Foundation Models
-- Framework: MLX
-- Languages: Python + Swift
-- Platform: macOS Native
-- Hardware: M1 and M4 chips, Apple Silicon
-- Dev Time: 3 weeks to MVP
+1. **Input: Training Tensors** - From data processing step, ready for model training
 
----
+2. **Metal-Accelerated Training** - Apple Silicon GPU optimization via MLX framework
 
-# Data Preparation
-
-- Collected anonymized notes from partner
-- Built synthetic notes for subject matter expert review
+3. **Output: 3 Specialized Models** - ICD-10, CPT, Vertebral Level ready for inference
 
 ---
 
-# Fine-tuning with MLX
+# The Workflow: Dictation → Intelligence → Note
 
-- Specialized training on terminology and medical coding
+**Input:** Examination 
+
+**Processing:** 3 MLX Models Run in Parallel (<50ms)
+- ICD Classifier → M54.5, M99.03
+- Vertebral Detector → L4-L5 lumbar segments
+- CPT Classifier → 98940, 97110
+
+**Output:** Complete SOAP Note with Codes
+- Subjective/Objective: Clinical narrative
+- Assessment: Diagnoses with ICD codes
+- Plan: Procedures with CPT codes + treatment details
 
 ---
 
 # Integration
-
-- Built a native macOS app
 
 ![w:1000 h:480](image.png)
 

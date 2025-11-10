@@ -117,6 +117,20 @@ Run quantized models efficiently
 
 ---
 
+# Real-World Performance: JSTD
+
+**Model Loading:** 34ms (all 3 models at startup)
+
+**Fresh Models:** Training date 2025-11-10
+
+**Inference Times:** 14ms (ICD), 3ms (CPT), 2ms (VERTEBRAL)
+
+**Predictions:** 8 ICD codes, 2 CPT codes, 8 vertebral levels
+
+**Architecture:** Pure MLX inference, no fallbacks
+
+---
+
 # Getting Started
 
 Install: pip install mlx
@@ -141,4 +155,5 @@ Distributed ML at the edge
 
 # Questions?
 
-**MLX:** github.com/ml-explore/mlx
+**MLX:** https://github.com/ml-explore/mlx
+**HuggingFace:** https://huggingface.co/docs/hub/en/mlx
