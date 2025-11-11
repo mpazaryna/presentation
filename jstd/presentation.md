@@ -34,41 +34,47 @@ theme: default
 
 ---
 
-# Collecting and Process Source Materials
+# Collecting Source Materials
 
 - **Collect** - Practitioner notes 
 - **Build** - Synthetic notes to extend clinical range
-- **Process** - Materials with a workflow to produce tensors
 
 ---
 
-# How Notes Become Tensors
+# Process Source Materials
 
 - **Extract** - Parse notes for findings, anatomical references, treatment codes
-- **Build** - Create terminology mappings from practitioner language 
-- **Create** - Tensors are optimized vectors ready for training
+- **Transform** - Create terminology mappings from practitioner language 
+- **Output** - Tensors aka optimized vectors
 
 ---
 
 # How Tensors Become Models
 
 - **Input** - Tensors 
-- **Training:** - Using the MLX framework
+- **Transform:** - Using the MLX framework
 - **Output:** - Custom and specialized models 
+
+---
+
+# Application Workflow: Exam
+
+**Input:** Examination 
+
+---
+
+# Application Workflow: Exam → Process
+
+- 3 Models Run in Parallel (<50ms)
+- ICD Classifier detects codes M54.5, M99.03
+- Vertebral Detector detects L4-L5 lumbar segments
+- CPT Classifier detects code 98940, 97110
 
 ---
 
 # Application Workflow: Exam → Process → Output
 
-**Input:** Examination 
-
-**Processing:** 3 Models Run in Parallel (<50ms)
-- ICD Classifier → M54.5, M99.03
-- Vertebral Detector → L4-L5 lumbar segments
-- CPT Classifier → 98940, 97110
-
-**Output:** Note
-- Subjective/Objective: Clinical narrative
+- Subjective: Clinical narrative
 - Assessment: Diagnoses with ICD codes
 - Plan: Procedures with CPT codes + treatment details
 
@@ -84,7 +90,7 @@ theme: default
 
 - Generic models and specialized training are powerful
 - Modern hardware can handle complex NLP
-- This workflow is Domain Independent
+- This workflow can be used in Domain Independent Applications 
 
 ---
 
