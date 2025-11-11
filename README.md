@@ -67,3 +67,9 @@ MIT
 
 - Email: matthew@paz.land
 - GitHub: [@mpazaryna](https://github.com/mpazaryna)
+
+## Load MCP Server
+
+```bash
+claude --mcp-config .mcp.json.context7
+```

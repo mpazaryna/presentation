@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:ml-explore.github.io)",
+      "WebFetch(domain:support.apple.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:www.apple.com)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

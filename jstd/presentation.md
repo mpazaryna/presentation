@@ -12,7 +12,6 @@ theme: default
 # About Me
 
 - Independent Developer 
-- Self taught
 - Spent 35 years in enterprise environments
 - Focused on agentic development and building
 
@@ -21,50 +20,50 @@ theme: default
 # Why Apple Native
 
 - Apple Foundation Models are available on 30+ Apple device models
-- MLX framework allows developers to train models on Apple Silicon
+- MLX allows developers to train models on Apple Silicon
 - Privacy First Approach to data
-- SwiftUI is a joy to work with
   
 ---
 
-# How I Built the Beast
+# How I Built the application (in 3 weeks)
 
-- Dev Time: 3 weeks to proof of concept
-- Explore and Learn MLX framework
-- Learn SwiftUI and xCode practices
+- Learn MLX framework
+- Learn SwiftUI
+- Learn xCode
 
 ---
 
 # Building the MLX Models
 
-- Collected actual notes from partner
-- Built synthetic notes for comprehensive coverage 
-- Python based workflow to process notes
-- Initially models where deployed to HuggingFace for dynamic loading
+- Real practitioner notes + accuracy-reviewed synthetic notes
+- Implement a Python workflow to build tensors
+
+---
+
+# Why Tensors Matter
+
+- Tensors encode language into trainable data
+- Result: Models that understand clinical documentation as written
 
 ---
 
 # Data Processing: Notes → Models
 
-1. **Extract & Annotate** - Parse raw notes for clinical findings, diagnoses, anatomical references, treatment codes
-
-2. **Build Domain Vocabulary** - Create terminology mappings from actual practitioner language (not textbook terms)
-
-3. **Convert to Training Tensors** - Format data for MLX: optimized vectors ready for neural network training
+- **Extract & Annotate** - Parse raw notes for clinical findings, diagnoses, anatomical references, treatment codes
+- **Build Domain Vocabulary** - Create terminology mappings from actual practitioner language (not textbook terms)
+- **Convert to Training Tensors** - Format data for MLX: optimized vectors ready for neural network training
 
 ---
 
 # Neural Network Training: MLX + Apple Silicon
 
-1. **Input: Training Tensors** - From data processing step, ready for model training
-
-2. **Metal-Accelerated Training** - Apple Silicon GPU optimization via MLX framework
-
-3. **Output: 3 Specialized Models** - ICD-10, CPT, Vertebral Level ready for inference
+- **Input: Training Tensors** - From data processing step, ready for model training
+- **Metal-Accelerated Training** - Apple Silicon GPU optimization via MLX framework
+- **Output: 3 Specialized Models** - ICD-10, CPT, Vertebral Level ready for inference
 
 ---
 
-# The Workflow: Dictation → Intelligence → Note
+# Application Workflow: Dictation → Intelligence → Note
 
 **Input:** Examination 
 
@@ -88,7 +87,7 @@ theme: default
 
 # What I Learned
 
-- Generic models benefit from specialized training
+- Generic models and specialized training are powerful
 - Modern hardware can handle complex NLP
 
 ---
@@ -97,5 +96,3 @@ theme: default
 
 - Email: matthew@paz.land
 - GitHub: https://github.com/mpazaryna
-
-
