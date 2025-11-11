@@ -1,0 +1,1 @@
+marp ./jstd/presentation.md -o ./jstd/index.html

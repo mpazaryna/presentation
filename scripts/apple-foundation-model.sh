@@ -1,0 +1,1 @@
+marp ./apple-foundation-model/presentation.md -o ./apple-foundation-model/index.html
