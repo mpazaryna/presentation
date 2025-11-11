@@ -14,7 +14,15 @@ theme: default
 - Independent Developer 
 - I've worked over 35 years in enterprise development and start ups
 - Currently focused on optimizing agentic development 
-- Building domain independent applications and workflows
+
+---
+
+# What I Built
+
+- Apple Native Application
+- Available on iOS, ipadOS and MacOS
+- Depends on Apple Foundation Models, on device AI 
+- Domain Independent Approach
 
 ---
 
@@ -22,15 +30,16 @@ theme: default
 
 - Apple Foundation Models are available on 30+ devices
 - MLX Framework allows models to be trained on Apple Silicon
-- Privacy First Approach to data
+- HIPPA rules require a privacy first approach 
   
 ---
 
-# How I Built the application (in 3 weeks)
+# How I Built the application
 
-- Learn MLX framework
+- Learn MLX 
 - Learn SwiftUI
 - Learn xCode
+- Gather clinical notes and source materials
 
 ---
 
@@ -49,26 +58,28 @@ theme: default
 
 ---
 
-# How Tensors Become Models
+# Building Models
 
 - **Input** - Tensors 
 - **Transform:** - Using the MLX framework
-- **Output:** - Custom and specialized models 
+- **Output:** - Custom specialized models 
 
 ---
 
 # Application Workflow: Exam
 
 **Input:** Examination 
+**Voice:** Versions of Whisper is HIPPA compliant
+**Keyboard:** On device
 
 ---
 
 # Application Workflow: Exam → Process
 
-- 3 Models Run in Parallel (<50ms)
+- Models Run in Parallel (<50ms)
 - ICD Classifier detects codes M54.5, M99.03
-- Vertebral Detector detects L4-L5 lumbar segments
 - CPT Classifier detects code 98940, 97110
+- Vertebral Detector detects L4-L5 lumbar segments
 
 ---
 
@@ -89,8 +100,9 @@ theme: default
 # What I Learned
 
 - Generic models and specialized training are powerful
-- Modern hardware can handle complex NLP
-- This workflow can be used in Domain Independent Applications 
+- Modern hardware can handle complex natural language processing
+- No Swift packages but elegant architecture to maintain domain independence
+- Refactor into official Swift packages at a latter time 
 
 ---
 
