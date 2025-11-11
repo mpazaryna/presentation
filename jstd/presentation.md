@@ -12,15 +12,16 @@ theme: default
 # About Me
 
 - Independent Developer 
-- Spent 35 years in enterprise environments
-- Focused on agentic development and building
+- I've worked over 35 years in enterprise development and start ups
+- Currently focused on optimizing agentic development 
+- Building domain independent applications and workflows
 
 ---
 
 # Why Apple Native
 
-- Apple Foundation Models are available on 30+ Apple device models
-- MLX allows developers to train models on Apple Silicon
+- Apple Foundation Models are available on 30+ devices
+- MLX Framework allows models to be trained on Apple Silicon
 - Privacy First Approach to data
   
 ---
@@ -33,46 +34,40 @@ theme: default
 
 ---
 
-# Building the MLX Models
+# Collecting and Process Source Materials
 
-- Real practitioner notes + accuracy-reviewed synthetic notes
-- Implement a Python workflow to build tensors
-
----
-
-# Why Tensors Matter
-
-- Tensors encode language into trainable data
-- Result: Models that understand clinical documentation as written
+- **Collect** - Practitioner notes 
+- **Build** - Synthetic notes to extend clinical range
+- **Process** - Materials with a workflow to produce tensors
 
 ---
 
-# Data Processing: Notes → Models
+# How Notes Become Tensors
 
-- **Extract & Annotate** - Parse raw notes for clinical findings, diagnoses, anatomical references, treatment codes
-- **Build Domain Vocabulary** - Create terminology mappings from actual practitioner language (not textbook terms)
-- **Convert to Training Tensors** - Format data for MLX: optimized vectors ready for neural network training
-
----
-
-# Neural Network Training: MLX + Apple Silicon
-
-- **Input: Training Tensors** - From data processing step, ready for model training
-- **Metal-Accelerated Training** - Apple Silicon GPU optimization via MLX framework
-- **Output: 3 Specialized Models** - ICD-10, CPT, Vertebral Level ready for inference
+- **Extract** - Parse notes for findings, anatomical references, treatment codes
+- **Build** - Create terminology mappings from practitioner language 
+- **Create** - Tensors are optimized vectors ready for training
 
 ---
 
-# Application Workflow: Dictation → Intelligence → Note
+# How Tensors Become Models
+
+- **Input** - Tensors 
+- **Training:** - Using the MLX framework
+- **Output:** - Custom and specialized models 
+
+---
+
+# Application Workflow: Exam → Process → Output
 
 **Input:** Examination 
 
-**Processing:** 3 MLX Models Run in Parallel (<50ms)
+**Processing:** 3 Models Run in Parallel (<50ms)
 - ICD Classifier → M54.5, M99.03
 - Vertebral Detector → L4-L5 lumbar segments
 - CPT Classifier → 98940, 97110
 
-**Output:** Complete SOAP Note with Codes
+**Output:** Note
 - Subjective/Objective: Clinical narrative
 - Assessment: Diagnoses with ICD codes
 - Plan: Procedures with CPT codes + treatment details
@@ -89,6 +84,7 @@ theme: default
 
 - Generic models and specialized training are powerful
 - Modern hardware can handle complex NLP
+- This workflow is Domain Independent
 
 ---
 
