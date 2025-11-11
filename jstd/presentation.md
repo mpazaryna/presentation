@@ -69,7 +69,7 @@ theme: default
 # Application Workflow: Exam
 
 **Input:** Examination 
-**Voice:** Versions of Whisper is HIPPA compliant
+**Voice:** Wisper with HIPPA compliance
 **Keyboard:** On device
 
 ---
