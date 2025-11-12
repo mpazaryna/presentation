@@ -12,46 +12,42 @@ theme: default
 # About Me
 
 - Independent Developer 
-- I've worked over 35 years in enterprise development and start ups
-- Currently focused on optimizing agentic development 
+- 35 years experience in full stack development
+- Focused on agentic software development - rebuilding my toolkit 
 
 ---
 
 # What I Built
 
-- Apple Native Application
-- Available on iOS, ipadOS and MacOS
-- Depends on Apple Foundation Models, on device AI 
-- Domain Independent Approach
+- Medical notation application for chiropractors
+- Best Practices Apple Native Application
+- Specs, Unit Tests, End to End Tests 
+- Reliance on Apple Foundation Model and MLX Framework
+- No Cloud
 
 ---
 
 # Why Apple Native
 
 - Apple Foundation Models are available on 30+ devices
-- MLX Framework allows models to be trained on Apple Silicon
-- HIPPA rules require a privacy first approach 
+- MLX Framework allows models to be trained on Apple Silicon 
+- Partner asked 'can we make this more star trek like'
   
 ---
 
-# How I Built the application
+# How I Built It
 
 - Learn MLX 
 - Learn SwiftUI
 - Learn xCode
-- Gather clinical notes and source materials
+- 150 hours of intense and enjoyable work
 
 ---
 
 # Collecting Source Materials
 
 - **Collect** - Practitioner notes 
-- **Build** - Synthetic notes to extend clinical range
-
----
-
-# Process Source Materials
-
+- **Build** - Synthetic notes
 - **Extract** - Parse notes for findings, anatomical references, treatment codes
 - **Transform** - Create terminology mappings from practitioner language 
 - **Output** - Tensors aka optimized vectors
@@ -63,6 +59,35 @@ theme: default
 - **Input** - Tensors 
 - **Transform:** - Using the MLX framework
 - **Output:** - Custom specialized models 
+
+---
+
+# Process: 700-900ms End-to-End
+
+- Phase 1: MLX Analysis (50-100ms) - Run all 3 processors in parallel, extract codes with confidence scores
+- Phase 2: Apple Intelligence (600-900ms) - Enhanced system instructions with MLX results → structured JSON SOAP note
+
+---
+
+# Run MLX Processors in Parallel
+
+```swift
+private func runMLXAnalysis(on text: String) async -> (
+    icd10: [ICD10Suggestion],
+    vertebral: VertebralAnalysisResult,
+    cpt: CPTAnalysisResult
+) {
+    async let icd10Task = icd10Processor.processWithMLX(text)
+    async let vertebralTask = vertebralProcessor.processWithMLX(text)
+    async let cptTask = cptProcessor.processWithMLX(text)
+
+    let (icd10Results, vertebralResults, cptResults) = await (icd10Task, vertebralTask, cptTask)
+
+    return (icd10: icd10Results, vertebral: vertebralResults, cpt: cptResults)
+}
+```
+
+**Timing:** ~50-100ms (all 3 processors run concurrently)
 
 ---
 
@@ -85,15 +110,19 @@ theme: default
 
 # Application Workflow: Exam → Process → Output
 
+- Examination: type or voice input 
+- Process: Models Run in Parallel (<50ms)
+- Report: Apple Foundation Models build the final report
 - Subjective: Clinical narrative
-- Assessment: Diagnoses with ICD codes
-- Plan: Procedures with CPT codes + treatment details
+- Objective: measurable data and observations
+- Assessment: clinician's professional judgment
+- Plan: outlines the next steps for treatment. 
 
 ---
 
 # Integration
 
-![w:1000 h:480](image.png)
+![](image.png)
 
 ---
 
@@ -101,8 +130,8 @@ theme: default
 
 - Generic models and specialized training are powerful
 - Modern hardware can handle complex natural language processing
-- No Swift packages but elegant architecture to maintain domain independence
-- Refactor into official Swift packages at a latter time 
+- Build an elegant architecture to maintain domain independence
+- Refactor into Swift packages when I'm more confident 
 
 ---
 
@@ -110,3 +139,4 @@ theme: default
 
 - Email: matthew@paz.land
 - GitHub: https://github.com/mpazaryna
+
