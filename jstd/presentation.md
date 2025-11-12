@@ -34,7 +34,7 @@ theme: default
   
 ---
 
-# Step 1: Collect Source Material and Build Data Pipeline
+# Collect Source Material and Process
 
 - **Collect** - Practitioner notes 
 - **Build** - Synthetic notes
@@ -80,7 +80,7 @@ def extract_icd_codes(text):
 
 ---
 
-# Building Models
+# Build Models
 
 ## Step 1
 - **Transform** - Create terminology mappings from practitioner language 
@@ -130,7 +130,7 @@ def extract_icd_codes(text):
 
 ---
 
-# Application Workflow: Exam → Process -> JSON
+# Application: Exam → Process -> JSON
 
 - Input: Examination
 - MLX Models Run in Parallel
@@ -151,7 +151,7 @@ def extract_icd_codes(text):
 
 ---
 
-# Run MLX Processors in Parallel
+# MLX Processors run in parallel
 
 ```swift
 private func runMLXAnalysis(on text: String) async -> (
