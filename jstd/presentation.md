@@ -130,13 +130,13 @@ def extract_icd_codes(text):
 
 ---
 
-# Application Workflow: Exam → Process to JSON
+# Application Workflow: Exam → Process -> JSON
 
-- Input: Examination as
+- Input: Examination
 - MLX Models Run in Parallel
 - Apple Intelligene with MLX results
 - JSON response
-- Save JSON as SwiftData
+- Save JSON to SwiftData
 
 ---
 
@@ -144,6 +144,8 @@ def extract_icd_codes(text):
 
 - Phase 1: MLX Analysis - Run all 3 processors in parallel
 - Phase 2: Apple Intelligence - Prompt with MLX results
+
+<br/>
 
 **Note:** Apple Intelligence has a 4k token limit
 
