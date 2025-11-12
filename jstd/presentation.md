@@ -14,6 +14,8 @@ theme: default
 - Independent Developer 
 - 35 years experience in full stack development
 - Focused on agentic software development - rebuilding my toolkit 
+<br/>
+![](contributions.png)
 
 ---
 
