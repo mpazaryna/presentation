@@ -14,8 +14,6 @@ theme: default
 - Independent Developer 
 - 35 years experience in full stack development
 - Focused on agentic software development - rebuilding my toolkit 
-<br/>
-![](contributions.png)
 
 ---
 
@@ -42,17 +40,53 @@ theme: default
 - Learn MLX 
 - Learn SwiftUI
 - Learn xCode
-- 150 hours of intense and enjoyable work
 
 ---
 
-# Collecting Source Materials
+# Collecting Materials and Build Workflows
 
 - **Collect** - Practitioner notes 
 - **Build** - Synthetic notes
 - **Extract** - Parse notes for findings, anatomical references, treatment codes
 - **Transform** - Create terminology mappings from practitioner language 
 - **Output** - Tensors aka optimized vectors
+
+---
+
+# Extracting Data
+
+```python
+def extract_icd_codes(text):
+    """
+    Extract ICD-10 codes from ASSESSMENT section.
+
+    Handles formats:
+    - Neck pain — M54.2
+    - ● Description | CODE
+    - M54.2 Cervicalgia
+    """
+    codes = []
+
+    # Pattern 1: Bullet format with — or | separator
+    # ● Description — M54.2 or ● Description | M54.2
+    bullet_pattern = r'[●•]\s*[^—|]+[—|]\s*([A-Z]\d{2}\.?\d+[A-Z]?)'
+    matches = re.findall(bullet_pattern, text)
+    for code in matches:
+        # Filter out vertebral levels (C1-C7, T1-T12, L1-L5, S1-S5)
+        if not re.match(r'^[CTLS]\d{1,2}$', code):
+            codes.append({'code': code, 'description': ''})
+
+    # Pattern 2: Traditional format (M54.2 Description)
+    if not codes:  # Only use if bullet pattern didn't find anything
+        traditional_pattern = r'\b([A-Z]\d{2}\.\d+[A-Z]?)\s+([^\n]+)'
+        matches = re.findall(traditional_pattern, text)
+        for code, description in matches:
+            # Filter out vertebral levels
+            if not re.match(r'^[CTLS]\d{1,2}', code):
+                codes.append({'code': code, 'description': description.strip()})
+
+    return codes
+```
 
 ---
 
@@ -88,8 +122,6 @@ private func runMLXAnalysis(on text: String) async -> (
     return (icd10: icd10Results, vertebral: vertebralResults, cpt: cptResults)
 }
 ```
-
-**Timing:** ~50-100ms (all 3 processors run concurrently)
 
 ---
 
@@ -134,6 +166,7 @@ private func runMLXAnalysis(on text: String) async -> (
 - Modern hardware can handle complex natural language processing
 - Build an elegant architecture to maintain domain independence
 - Refactor into Swift packages when I'm more confident 
+- 150 hours of desk work flies by
 
 ---
 
@@ -141,4 +174,3 @@ private func runMLXAnalysis(on text: String) async -> (
 
 - Email: matthew@paz.land
 - GitHub: https://github.com/mpazaryna
-
