@@ -17,7 +17,7 @@ theme: default
 
 ---
 
-# What I'm Built
+# What I've Built
 
 - Apple Native using MLX and Apple Foundation Models 
 - Medical notation application
@@ -82,11 +82,13 @@ def extract_icd_codes(text):
 
 # Building Models
 
+## Step 1
 - **Transform** - Create terminology mappings from practitioner language 
 - **Output** - Tensors aka optimized vectors
-- **Input** - Tensors 
-- **Transform:** - Using the MLX framework
-- **Output:** - Custom specialized models 
+
+## Step 2
+- **Transform** - Using the MLX framework
+- **Output** - Custom specialized models 
 
 ---
 
@@ -128,38 +130,22 @@ def extract_icd_codes(text):
 
 ---
 
-# Process: 700-900ms End-to-End
+# Application Workflow: Exam → Process to JSON
 
-- Phase 1: MLX Analysis (50-100ms) - Run all 3 processors in parallel, extract codes with confidence scores
-- Phase 2: Apple Intelligence (600-900ms) - Enhanced system instructions with MLX results → structured JSON SOAP note
-
----
-
-# Run MLX Processors in Parallel
-
-```swift
-private func runMLXAnalysis(on text: String) async -> (
-    icd10: [ICD10Suggestion],
-    vertebral: VertebralAnalysisResult,
-    cpt: CPTAnalysisResult
-) {
-    async let icd10Task = icd10Processor.processWithMLX(text)
-    async let vertebralTask = vertebralProcessor.processWithMLX(text)
-    async let cptTask = cptProcessor.processWithMLX(text)
-
-    let (icd10Results, vertebralResults, cptResults) = await (icd10Task, vertebralTask, cptTask)
-
-    return (icd10: icd10Results, vertebral: vertebralResults, cpt: cptResults)
-}
-```
+- Input: Examination as
+- MLX Models Run in Parallel
+- Apple Intelligene with MLX results
+- JSON response
+- Save JSON as SwiftData
 
 ---
 
-# Application Workflow: Exam → Process - Report
+# Process: 700-900ms
 
-- Input: Examination as text or voice (using wisper)
-- Models Run in Parallel (<50ms)
-- JSON response from workflow
+- Phase 1: MLX Analysis - Run all 3 processors in parallel
+- Phase 2: Apple Intelligence - Prompt with MLX results
+
+**Note:** Apple Intelligence has a 4k token limit
 
 ---
 
@@ -236,7 +222,7 @@ private func runMLXAnalysis(on text: String) async -> (
 
 ---
 
-# Additional Reporting
+# Additional Analysis (Extremely Exciting Aspect)
 
 ![](analysis.png)
 
@@ -249,7 +235,7 @@ private func runMLXAnalysis(on text: String) async -> (
 //  PatientVisitSummary.swift
 //  ContentKit
 //
-//  Patient Visit Trend Analysis template - Comprehensive visit trend analysis
+//  Patient Visit Trend Analysis template
 //
 
 import Foundation
@@ -304,7 +290,7 @@ Convert this SOAP note for the patient:
 
 - Generic models and specialized training are powerful
 - Modern hardware can handle complex natural language processing
-- Build an elegant architecture to maintain domain independence
+- Build an elegant architecture AND maintain domain independence
 
 ---
 
